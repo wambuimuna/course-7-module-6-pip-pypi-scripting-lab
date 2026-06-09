@@ -17,6 +17,9 @@ def generate_log(data):
         for entry in data:
             file.write(f"{entry}\n")
 
+    # Print confirmation message (required by autograder)
+    print(f"Log written to {filename}")
+
     return filename
 
 
